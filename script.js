@@ -15,13 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-
-  var form = document.getElementById('subscribe-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = document.getElementById('email').value;
-      window.open('https://seoultokyo.beehiiv.com/subscribe?email=' + encodeURIComponent(email), '_blank');
-    });
-  }
 });
