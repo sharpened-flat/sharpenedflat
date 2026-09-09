@@ -175,7 +175,23 @@ strong, b { font-weight: 700; }
 .hero-side {
   max-width: 340px;
 }
-.hero-side p { margin-bottom: 24px; color: #eee; font-size: 24px; }
+.hero-side p { margin-bottom: 24px; color: #eee; font-size: 16px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid currentColor;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn-outline { color: inherit; }
+.btn:hover { background: currentColor; }
+.btn-outline:hover { color: var(--dark); background: #fff; }
+.hero .btn:hover, .footer .btn:hover { color: var(--dark); background: #fff; }
 
 /* Countries */
 .countries {
